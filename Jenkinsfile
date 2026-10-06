@@ -19,7 +19,7 @@ pipeline {
         stage('Terraform Init') {
             steps {
                 echo 'Initializing Terraform...'
-                sh 'terraform init -input=false'
+                sh 'terraform init -input=false --reconfigure'
             }
         }
 
