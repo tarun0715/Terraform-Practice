@@ -1,5 +1,5 @@
 terraform {
   backend "local" {
-    path = "/home/tarun/terraform-state/terraform.tfstate"
+    path = "/var/lib/jenkins/terraform-state/terraform.tfstate"
   }
 }
